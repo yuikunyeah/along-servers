@@ -35,11 +35,14 @@ client.on('ready', message =>{
   client.user.setPresence({ game: { name: '丁寧語の使い方' } });
 });
 client.on('guildMemberAdded', member=>{
- client.channels.cache.get("927098971829186593").send("a");
+ var msg = "927098971829186593";
+  sendMsg(msg, "やあ");
 });
 
 client.on('message', message =>{
-
+if(message.content == "!id msg"){
+  sendMsg(message.channel.id,"a");
+}
 });
 
 if(process.env.DISCORD_BOT_TOKEN == undefined){
