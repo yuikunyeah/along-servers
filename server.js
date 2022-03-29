@@ -41,7 +41,7 @@ client.on('guildMemberAdded', member=>{
 
 client.on('message', message =>{
 if(message.content == "!id msg"){
-  sendMsg(message.channel.id,"a"+message.channel.id);
+  sendMsg(message.channel.id,"It is "+message.channel.id);
 }
 });
 
