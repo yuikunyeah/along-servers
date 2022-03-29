@@ -35,7 +35,7 @@ client.on('ready', message =>{
   client.user.setPresence({ game: { name: '丁寧語の使い方' } });
 });
 client.on('guildMemberAdded', member=>{
- var msg = "927098971829186593";
+ var msg = 927098971829186593;
   sendMsg(msg, "やあ");
 });
 
